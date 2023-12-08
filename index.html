@@ -16,10 +16,23 @@ Steps:
     <title>Tribune Letter</title> <!-- Names the website -->
 </head>
 <body>
+    <h1>Delta Zeta Tribune Letter</h1>
     <form>
-        <!-- <input type="file"> -->
-        <input id="inputID" class="userInput" required/>
-        <button id="buttonID" class="userInput" type="submit">Button</button>
+        <!--Creates, Labels, and Names all of the required inputs-->
+        <label for="csvID">Enter a CSV file:</label><br>
+        <input type="file" name="csvID" id="csvID"><br><br>
+
+        <lable for="emailID">E-Mail of Sender:</lable><br>
+        <input type="email" name="emailID" id="emailID" class="userInput" required/><br><br>
+
+        <lable for="headerID">Header of E-Mail:</lable><br>
+        <input name="headerID" id="headerID" class="userInput" required/><br><br>
+
+        <lable for="bodyID">Body of E-Mail:</lable><br>
+        <input name="bodyID" id="bodyID" class="userInput" required/><br><br>
+
+        <!--Creates the submit button-->
+        <button id="buttonID" class="userInput" type="submit">Send E-Mail</button>
     </form>
 </body>
 </html>
